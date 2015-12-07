@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Clases de Xpath
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper,oneside, openany]{book}
+\textheight=26cm
+\textwidth=18cm
+\topmargin=-2cm
+\oddsidemargin=-1cm
+\parindent=0mm
+
+\usepackage[utf8x]{inputenc}
+%\usepackage[spanish]{babel}
+\usepackage{ucs}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{anyfontsize}
+\usepackage{float}
+\usepackage{textcomp}
+%Paquete verbments para obtener bonito código fuente
+\usepackage{verbments}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\fvset{frame=single,framerule=1pt}
+%\plset{language=python ,texcl=true,style=vs,%
+%captionfont=\sffamily\color{white}}
+
+\setcounter{chapter}{0}
+
+\pagestyle{plain}
+
+
+%--------------------------------------------------------------------------
+%titulo
+\title{ 
+ \begin{center}
+  {Xpath}\\
+ \end{center}
+}
+
+\author{Pedro Muñoz del Rio\\
+        pmunoz@gmail.com}
+
+\date{Lima, Perú}
+
+\begin{document}
+
+\renewcommand{\baselinestretch}{1.5} %espacio entre lineas, 2 es doble espacio
+\renewcommand{\contentsname}{Index}
+\renewcommand{\listfigurename}{List of Figures}
+\renewcommand{\chaptername}{Chapter}
+\renewcommand{\bibname}{Sources}
+\renewcommand{\figurename}{Figure}
+\renewcommand{\tablename}{Table}
+
+ \maketitle %despliega el titulo
+ 
+  \frontmatter  %Secciones del documento que van con numeros romanos en el indice 
+ 
+   \input{intro.tex} %Resumen y Abstract
+  
+ \tableofcontents %despliega el índice
+ \listoffigures   %Tabla de figuras
+      
+ \mainmatter  %Cuerpo del documento  
+
+ %Cuerpo del documento 
+
+ \chapter{Xpath}
+    \input what_is_xpath.tex
+
+ \chapter{Working with Xpath}
+    \input working_xpath.tex
+   
+
+   \bibliographystyle{style}
+   \bibliography{bib}
+
+\end{document}
+
